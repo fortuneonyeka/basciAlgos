@@ -61,7 +61,26 @@ const spliceArray = array.splice(1, 2,"cherry")
 console.log(spliceArray, array);
 
 //fill replaces every item in an array with a static item or element
-
 const dummyData = [1,2,3,4,5,6]
 const fillDumy = dummyData.fill(0)
 console.log(fillDumy);
+
+//findindex
+
+const index = nums2.findIndex((item) => item === 5)
+console.log(index);
+
+//flat: returns new array with all the nexted arrays concatnated into 1 array this may take argument like 2 for deep nexted array
+const nextedArray = [1,[6,[9,[2,3],14],12],[[4,5,],[6,7]]]
+const flatArray = nextedArray.flat(3)
+console.log(flatArray);
+
+//reverse
+const toReverseArray = [1,2,3,4,5,6]
+const reversedArray = toReverseArray.reverse()
+console.log(reversedArray);
+
+//sort
+const unsorted = [10,4,2,9,0,3,5,1,7,6,8]
+const sorted = unsorted.sort((a,b) => a - b)
+console.log(sorted);
