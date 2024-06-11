@@ -20,3 +20,22 @@ function getEvenNumbers(num) {
 }
   
   console.log(getEvenNumbers(givenNum));
+
+
+  function getOddNumbers(n) {
+      let oddNumbers = [];
+    
+      //Check for negative input
+    
+      if (n <= 0) {
+        return -1;
+      }
+      for (let i = 0; i < n; i++) {
+        if (i % 2 !== 0) {
+          oddNumbers.push(i);
+        }
+      }
+      return oddNumbers;
+    }
+    
+    console.log(getOddNumbers(givenNum));
